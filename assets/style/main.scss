@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "fonts";
+
+html,
+body {
+  font-family: "SF Pro Text", sans-serif;
+  height: 100% !important;
+  width: 100% !important;
+}
