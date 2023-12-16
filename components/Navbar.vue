@@ -23,7 +23,7 @@ import Menu from "@/assets/menu.svg";
             class="flex items-center justify-center gap-2 text-2xl font-bold"
           >
             <img
-              src="logo.svg"
+              src="/logo.svg"
               width="124"
               height="57"
               alt="La Famiglia"
