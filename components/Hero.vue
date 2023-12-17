@@ -39,8 +39,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="px-28 py-20 relative flex">
-    <div class="flex w-1/2 relative">
+  <div class="px-28 py-15 relative flex">
+    <div class="flex w-1/2 relative flex-col">
       <h1>
         Levez votre
         <span class="relative" ref="underlinedText">
@@ -66,6 +66,20 @@ onMounted(() => {
 
         et générez vos premiers clients.
       </h1>
+      <h2 class="py-8">
+        La Famiglia accompagne la croissance de votre entreprise, de la
+        recherche de financement au déploiement marketing !
+      </h2>
+      <Button
+          class="max-w-[250px] px-8 py-6 z-10"
+          :text="'Rencontrer l\'équipe'"
+          primary
+          to="https://calendly.com/lafamiglia-contact/30min"
+        />
+        <div class="flex py-6 items-center">
+          <img src="/clients.webp" width="84" height="30" class="mr-3"/>
+          <h3>+50 entreprises accompagnées.</h3>
+        </div>
     </div>
     <div class="flex w-1/2">
       <AnimateSvg />
@@ -81,6 +95,29 @@ h1 {
   font-weight: 700;
   line-height: 110%; /* 70.4px */
   letter-spacing: -3.2px;
+}
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 105.612%;
+  background: linear-gradient(
+    111deg,
+    #202041 68.83%,
+    rgba(45, 116, 255, 0.37) 117.95%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3{
+  color: var(--fond-gris-bleu, #202041);
+  opacity: 0.5;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 105.612%;
 }
 .curve-underline {
   position: absolute;

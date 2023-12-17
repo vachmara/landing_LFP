@@ -12,7 +12,7 @@ const initAnimation = () => {
   if (!svg || !pathElement) return;
 
   const bbox = pathElement.getBBox();
-  const padding = 50; // add padding to avoid cropping
+  const padding = 0; // add padding to avoid cropping
   const newViewBox = [
     bbox.x - padding / 2,
     bbox.y - padding / 2,
@@ -81,13 +81,13 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 110%;
+  width: 100%;
   height: 100%;
 }
 .svg-container svg {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 60%;
   transform: translate(-50%, -50%);
   overflow: visible; /* Allow the SVG to overflow its container */
 }
