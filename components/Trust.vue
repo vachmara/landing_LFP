@@ -12,7 +12,7 @@
 <style scoped>
 .trust {
   border-radius: 30px;
-  background-image: url("bg-trust.webp"),
+  background-image: url("/bg-trust.webp"),
     linear-gradient(
       109deg,
       rgba(39, 88, 184, 0.2) -72.88%,
