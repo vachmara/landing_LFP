@@ -1,10 +1,52 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref, onMounted, onUnmounted, reactive } from 'vue';
+import anime from 'animejs';
+
+const logos = ref<HTMLElement | null>(null);
+
+const imgWidth = 200; 
+const duration = 4000;
+
+const animation = reactive<{ instance?: anime.AnimeInstance }>({});
+
+onMounted(() => {
+  if (logos.value) {
+    const totalSlides = logos.value.children.length;
+
+    // Initialize Anime.js animation instance for the logos element
+    animation.instance = anime({
+      targets: logos.value.children,
+      keyframes: [
+        { translateX: -imgWidth * totalSlides, duration: (duration / 2) * totalSlides },
+        { translateX: 0, duration: 0 } // Snap back to initial position instantly
+      ],
+      loop: true,
+      easing: 'linear',
+      reverse: true,
+      autoplay: true
+    });
+  }
+});
+
+// Clear interval on component unmount to prevent memory leaks
+onUnmounted(() => {
+  if (animation.instance) {
+    animation.instance.pause();
+  }
+});
+</script>
 
 <template>
-  <div class="trust flex flex-col items-center justify-center">
+  <div class="trust flex flex-col items-center justify-center gap-10">
     <p class="trust-text">Ils ont fait confiance aux Freelances</p>
-    <div ref="logos" class="logo">
-    
+    <div ref="logos" class="flex overflow-hidden gap-10">
+      <img
+        v-for="i in 8"
+        :key="i"
+        :src="`/proof/${i + 1}.webp`"
+        height="83"
+        class="h-20"
+      />
     </div>
   </div>
 </template>
@@ -34,5 +76,8 @@
   font-weight: 500;
   width: 100%;
   line-height: normal;
+}
+.logos {
+  scroll-behavior: smooth; 
 }
 </style>
