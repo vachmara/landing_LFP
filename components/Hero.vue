@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { onMounted, ref, nextTick } from "vue";
 import anime from "animejs";
+import { ref, onMounted, nextTick } from "vue";
 
 const underlinedText = ref<HTMLElement | null>(null);
 const curveSVG = ref<HTMLElement | null>(null);
@@ -13,37 +13,34 @@ const init = () => {
 
   const textRect = text.getBoundingClientRect();
 
-  // Position the SVG underneath the underlined text (adjust 'bottom' as needed)
-  svgElement.style.position = "absolute";
-  svgElement.style.bottom = "-5px"; // Adjust this value for correct placement
+  // SVG will be positioned relatively to the text based on Tailwind classes
+  svgElement.style.width = Math.ceil(textRect.width) + "px"; // Set in begin function earlier
 
-  // Anime.js animation for the SVG stroke
-  anime({
+  const animation = anime({
     targets: svgElement.querySelector("path"),
     strokeDashoffset: [anime.setDashoffset, 0],
     duration: 1000,
     easing: "easeInOutSine",
     autoplay: false,
-    begin: function () {
-      // Set the SVG width to the text width before starting the animation
-      svgElement.style.width = Math.ceil(textRect.width) + "px";
-    },
-  }).play();
+  });
+
+  animation.play();
 };
 
 onMounted(() => {
-  nextTick(() => {
-    init();
-  });
+  nextTick(init);
+  window.addEventListener("resize", init); // Handle resize to ensure responsive SVG
 });
 </script>
 
 <template>
-  <div class="px-28 py-15 relative flex">
-    <div class="flex w-1/2 relative flex-col">
-      <h1>
+  <div
+    class="px-4 lg:px-28 py-8 lg:py-15 relative flex flex-wrap lg:flex-nowrap"
+  >
+    <div class="flex-grow lg:flex lg:w-1/2 relative flex-col">
+      <h1 class="text-3xl lg:text-5xl font-bold leading-tight">
         Levez votre
-        <span class="relative" ref="underlinedText">
+        <span class="relative inline-block" ref="underlinedText">
           premier million
           <svg
             ref="curveSVG"
@@ -63,26 +60,25 @@ onMounted(() => {
             />
           </svg>
         </span>
-
         et générez vos premiers clients.
       </h1>
-      <h2 class="py-8">
+      <h2 class="py-4 lg:py-8 text-lg lg:text-2xl">
         La Famiglia accompagne la croissance de votre entreprise, de la
         recherche de financement au déploiement marketing !
       </h2>
       <Button
-          class="max-w-[250px] px-8 py-6 z-10"
-          :text="'Rencontrer l\'équipe'"
-          primary
-          to="https://calendly.com/lafamiglia-contact/30min"
-        />
-        <div class="flex py-6 items-center">
-          <img src="/clients.webp" width="84" height="30" class="mr-3"/>
-          <h3>+50 entreprises accompagnées.</h3>
-        </div>
+        class="max-w-xs lg:max-w-sm px-4 lg:px-8 py-3 lg:py-6 z-10"
+        :text="'Rencontrer l\'équipe'"
+        primary
+        to="https://calendly.com/lafamiglia-contact/30min"
+      />
+      <div class="flex py-3 lg:py-6 items-center">
+        <img src="/clients.webp" width="84" height="30" class="mr-2 lg:mr-3" />
+        <h3 class="text-sm opacity-50">+50 entreprises accompagnées.</h3>
+      </div>
     </div>
-    <div class="flex w-1/2">
-      <AnimateSvg />
+    <div class="hidden md:flex-grow lg:flex lg:w-1/2">
+      <AnimateSvg class="" />
     </div>
   </div>
 </template>
@@ -90,17 +86,9 @@ onMounted(() => {
 <style scoped>
 h1 {
   color: var(--fond-gris-bleu, #202041);
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%; /* 70.4px */
-  letter-spacing: -3.2px;
 }
+
 h2 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 105.612%;
   background: linear-gradient(
     111deg,
     #202041 68.83%,
@@ -111,19 +99,11 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-h3{
-  color: var(--fond-gris-bleu, #202041);
-  opacity: 0.5;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 105.612%;
-}
 .curve-underline {
   position: absolute;
   display: block;
-  transform: rotate(1deg);
-
+  left: 0;
+  bottom: -0.5rem;
   overflow: visible;
 }
 </style>

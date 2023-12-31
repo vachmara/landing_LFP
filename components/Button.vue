@@ -17,7 +17,7 @@ const props = defineProps({
 
 <template>
   <NuxtLink
-    class="button h-12 px-8 max"
+    class="button h-12 px-8"
     :to="to"
     :class="[primary ? 'primary' : 'secondary']"
   >
@@ -35,7 +35,7 @@ const props = defineProps({
   align-self: stretch;
   border-radius: 11px;
   background: var(--Jaune, #ffd027);
-  color: #fff;
+  color: #202041;
   text-align: center;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   font-family: "SF Pro Text", sans-serif;
@@ -46,7 +46,19 @@ const props = defineProps({
   transition: all 0.35s ease-in-out;
 }
 
+.button.secondary {
+  background: var(--Bleu-clair, #2d74ff);
+  color: #ffffff;
+}
+.button.secondary:hover {
+  color: #202041;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  background: var(--Jaune, #ffd027);
+}
+
 .button:hover {
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
   font-size: 16px;
   background: var(--Bleu-clair, #2d74ff);
