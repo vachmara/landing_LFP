@@ -71,7 +71,7 @@ onUnmounted(() => {
 .trust-text {
   color: #fff;
   text-align: center;
-  font-size: 32px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 500;
   width: 100%;
@@ -85,6 +85,9 @@ onUnmounted(() => {
 }
 
 @media (min-width: 640px) {
+  .trust-text {
+    font-size: 32px;
+  }
   .logos {
     min-height: 83px; /* Original height */
   }

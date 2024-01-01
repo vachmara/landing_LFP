@@ -45,12 +45,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="rounded-[50px] bg-white px-10 flex flex-col gap-10 py-10 relative pb-32 overflow-hidden">
+  <div
+    class="rounded-[50px] bg-white px-10 flex flex-col gap-10 py-10 relative pb-32 overflow-hidden"
+  >
     <img
       :src="`/lfp_${project ? 'project' : 'invest'}.webp`"
       alt="logo"
       width="198"
       height="93"
+      class="w-[198px] h-auto sm:w-[150px]"
     />
     <div>
       <span
@@ -78,7 +81,7 @@ onMounted(() => {
       </span>
     </div>
 
-    <div class="max-w-[20vw] opacity-60">
+    <div class="max-w-full sm:max-w-[20vw] opacity-60 text-sm sm:text-base">
       <span v-if="!project"
         >Vous accompagne dans vos recherches de financements. De la préparation
         de la levée, à la rencontre d’investisseurs, notre rôle est de faciliter
@@ -94,7 +97,7 @@ onMounted(() => {
     </div>
     <div class="flex items-end h-full">
       <Button
-        class="max-w-[250px] px-8 py-6 z-10 mt-auto"
+        class="w-full sm:max-w-[250px] px-4 py-3 sm:px-8 sm:py-6 z-10 mt-auto text-sm sm:text-base"
         :text="!project ? 'Découvrir notre offre' : 'Obtenir un devis'"
         :primary="!project"
         to="https://calendly.com/lafamiglia-contact/30min"

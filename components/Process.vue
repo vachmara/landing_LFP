@@ -81,8 +81,8 @@ const totalSliderWidth = computed(() => {
 <template>
   <div id="process" class="px-20 py-16 overflow-hidden">
     <div class="flex w-full justify-between">
-      <h1 class="text-5xl font-bold text-white">Notre process</h1>
-      <div class="flex gap-5">
+      <h1 class="md:text-5xl text-3xl font-bold text-white">Notre process</h1>
+      <div class="hidden md:flex gap-5">
         <img
           src="/left.svg"
           alt="arrow-left"
@@ -123,7 +123,7 @@ const totalSliderWidth = computed(() => {
         />
       </div>
     </div>
-    <div class="flex justify-center">
+    <div class="hidden justify-center md:flex">
       <Button
         class="max-w-xs lg:max-w-sm px-4 lg:px-8 py-3 lg:py-6 z-10"
         text="Rencontrez la Famiglia"
@@ -131,6 +131,24 @@ const totalSliderWidth = computed(() => {
         primary
       />
     </div>
+    <div class="flex md:hidden justify-between">
+        <img
+          src="/left.svg"
+          alt="arrow-left"
+          class="cursor-pointer"
+          width="45"
+          height="45"
+          @click="prevSlide"
+        />
+        <img
+          src="/right.svg"
+          alt="arrow-right"
+          class="cursor-pointer"
+          width="45"
+          height="45"
+          @click="nextSlide"
+        />
+      </div>
   </div>
 </template>
 
@@ -155,7 +173,6 @@ const totalSliderWidth = computed(() => {
 }
 .card {
   min-width: 300px; /* Adjust width as per your design requirements */
-  min-height: 350px; /* Adjust height as per your design requirements */
 }
 .slider-track {
   margin-left: calc(

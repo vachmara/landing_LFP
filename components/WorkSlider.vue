@@ -1,0 +1,12 @@
+<script lang="ts" setup>
+defineProps({
+  
+})
+</script>
+
+<template>
+  
+</template>
+
+<style scoped>
+</style>
