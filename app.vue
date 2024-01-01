@@ -62,6 +62,9 @@ useHead({
     </UContainer>
     <Formules />
     <Team />
+    <UContainer>
+      <Process />
+    </UContainer>
   </div>
 </template>
 
