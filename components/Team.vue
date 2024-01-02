@@ -138,7 +138,7 @@ const team_members = [
       <h1 class="text-6xl font-bold text-[#202041]">Notre Team</h1>
       <h2 class="text-[#2D74FF] opacity-60 text-xl">Tous experts dans leur domaines</h2>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+    <div class="flex flex-nowrap overflow-x-auto md:overflow-x-hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
       <TeamMember
         v-for="member in team_members"
         :key="member.firstname"
@@ -148,9 +148,11 @@ const team_members = [
         :role="member.role"
         :hashtags="member.hashtags"
         :socials="member.socials"
+        class="min-w-max"
       />
     </div>
   </UContainer>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
