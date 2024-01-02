@@ -66,6 +66,7 @@ useHead({
       <Process />
     </UContainer>
     <Work />
+    <FAQ />
   </div>
 </template>
 
