@@ -22,7 +22,8 @@ defineProps({
     </div>
     <div class="flex flex-col gap-2">
       <span class="text-[#202041] text-xl">{{ role }}</span>
-      <span class="text-[#2D74FF]">{{ hashtags }}</span>
+      <!-- Always two lines text even empty -->
+      <span class="text-[#2D74FF] min-h-[40px]">{{ hashtags }}</span>
     </div>
     <div class="flex flex-row gap-5">
       <div
