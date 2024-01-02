@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const props = defineProps({
+defineProps({
   primary: {
     type: Boolean,
     default: false,
@@ -19,6 +19,7 @@ const props = defineProps({
   <NuxtLink
     class="button h-12 px-8"
     :to="to"
+    target="_blank"
     :class="[primary ? 'primary' : 'secondary']"
   >
     {{ text }}
@@ -40,7 +41,6 @@ const props = defineProps({
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   font-family: "SF Pro Text", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   transition: all 0.35s ease-in-out;
