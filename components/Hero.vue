@@ -78,7 +78,10 @@ onMounted(() => {
       </div>
     </div>
     <div class="hidden md:flex-grow lg:flex lg:w-1/2">
-      <img src="/logo.webp" class="w-full absolute left-0 z-[100] transform rotate-[-5deg]" />
+      <img
+        src="/logo.webp"
+        class="w-full absolute left-0 z-[100] transform rotate-[-5deg]"
+      />
       <AnimateSvg class="relative" />
     </div>
   </div>
@@ -90,10 +93,10 @@ h1 {
 }
 
 h2 {
-  background: linear-gradient(
-    111deg,
-    #202041 68.83%,
-    rgba(45, 116, 255, 0.37) 117.95%
+  background: var(
+    --hero,
+    url("/lignes.webp") center center / cover no-repeat,
+    linear-gradient(111deg, #202041 68.83%, rgba(45, 116, 255, 0.37) 117.95%)
   );
   background-clip: text;
   -webkit-background-clip: text;

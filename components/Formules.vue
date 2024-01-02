@@ -74,6 +74,7 @@ onMounted(() => {
 #formules {
   background: var(
     --fond-hero,
+    url("/lignes_blanches.webp") center center / cover no-repeat,
     linear-gradient(
       38deg,
       rgba(41, 36, 255, 0.2) 15.91%,
