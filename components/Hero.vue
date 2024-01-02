@@ -67,7 +67,7 @@ onMounted(() => {
         recherche de financement au déploiement marketing !
       </h2>
       <Button
-        class="max-w-xs lg:max-w-sm px-4 lg:px-8 py-3 lg:py-6 z-10"
+        class="max-w-xs md:max-w-[250px] px-4 lg:px-8 py-3 lg:py-6 z-10"
         :text="'Rencontrer l\'équipe'"
         primary
         to="https://calendly.com/lafamiglia-contact/30min"

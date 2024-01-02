@@ -8,7 +8,7 @@
       <Navbar />
       <div class="hero-container">
         <Hero />
-        <div class="flex items-center justify-center py-32">
+        <div class="flex items-center justify-center py-32 px-4 lg:px-28">
           <Trust />
         </div>
       </div>

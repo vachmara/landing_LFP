@@ -15,7 +15,7 @@ const images = [
 <template>
   <div>
     <UContainer class="flex flex-col gap-20 pt-32">
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5" id="work">
         <h1 class="text-6xl font-bold text-[#202041]">Nos travaux</h1>
         <h2 class="text-[#2D74FF] opacity-60 text-xl">
           Découvrez nos derniers travaux

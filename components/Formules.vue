@@ -38,9 +38,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="formules">
+  <div class="formules">
     <UContainer class="py-32 flex flex-col gap-20">
-      <h1 class="text-6xl font-semibold text-white">
+      <div id="formules"></div>
+      <h1 class="text-6xl font-semibold text-white" >
         <span class="relative" ref="underlinedText">
           Nos formules
           <svg
@@ -71,7 +72,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-#formules {
+.formules {
   background: var(
     --fond-hero,
     url("/lignes_blanches.webp") center center / cover no-repeat,

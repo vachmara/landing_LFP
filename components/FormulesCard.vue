@@ -49,7 +49,7 @@ onMounted(() => {
     class="rounded-[50px] bg-white px-10 flex flex-col gap-10 py-10 relative pb-32 overflow-hidden"
   >
     <img
-      :src="`/lfp_${project ? 'project' : 'invest'}.webp`"
+      :src="`/lfp_${project ? 'project' : 'invest'}.svg`"
       alt="logo"
       width="198"
       height="93"

@@ -134,7 +134,7 @@ const team_members = [
 
 <template>
   <UContainer class="flex flex-col gap-20 py-32">
-    <div class="flex flex-col gap-5">
+    <div class="flex flex-col gap-5" id="team">
       <h1 class="text-6xl font-bold text-[#202041]">Notre Team</h1>
       <h2 class="text-[#2D74FF] opacity-60 text-xl">Tous experts dans leur domaines</h2>
     </div>
