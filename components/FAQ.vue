@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <UContainer class="flex flex-col gap-20 py-32">
+  <UContainer class="flex flex-col gap-20 pb-32 pt-5">
     <div class="flex flex-col gap-5">
       <h1 class="text-6xl font-bold text-[#202041]">FAQ</h1>
       <h2 class="text-[#2D74FF] opacity-60 text-xl">
@@ -9,7 +9,7 @@
       </h2>
     </div>
     <div class="flex flex-col gap-10">
-      <div class="flex gap-10">
+      <div class="flex md:flex-row flex-col gap-10">
         <FAQBlock
           question="Combien coûte une levée de fonds ?"
           answer="Dans l'offre La Famiglia Invest, uniquement la création du business plan et du pitch deck sont payants. Pour le reste, nous travaillons au succès."
@@ -21,7 +21,7 @@
           answer="Travailler avec un collectif de Freelances c'est collaborer avec des entrepreneurs comme vous, disposant d’une vision business affutée, une flexibilité dans l'exécution et une expertise construite dans la réalité du terrain."
         />
       </div>
-      <div class="flex gap-10">
+      <div class="flex md:flex-row flex-col gap-10">
         <FAQBlock
           class="md:w-2/5 w-full"
           question="Comment les freelances ont-ils été sélectionnés ?"
