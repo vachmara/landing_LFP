@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { ref, onMounted, onUnmounted, reactive } from "vue";
 import anime from "animejs";
 
 const logos = ref<HTMLElement | null>(null);
