@@ -80,7 +80,7 @@ onMounted(() => {
     <div class="hidden md:flex-grow lg:flex lg:w-1/2">
       <img
         src="/logo.webp"
-        class="w-full absolute left-0 z-[100] transform rotate-[-5deg]"
+        class="w-full absolute left-0 z-[8] transform rotate-[-5deg]"
       />
       <AnimateSvg class="relative" />
     </div>

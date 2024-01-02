@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const images = [
   "/work/asterblank.webp",
-  "/work/biosa.webp",
+  "/work/biosia.webp",
   "/work/delex.webp",
   "/work/hapyes.webp",
   "/work/lpj.webp",
