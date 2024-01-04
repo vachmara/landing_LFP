@@ -6,12 +6,12 @@ useHead({
     {
       name: "description",
       content:
-        "Une famille de passionnés, d'innovateurs et d'audacieux. Qui partagent une ambition commune : propulser les projets entrepreneuriaux vers la réussite. Nous croyons en la puissance des relations humaines.C'est dans le partage d'idées et d'expertises que naissent les plus grands projets.",
+        "Une famille de passionnés, d'innovateurs et d'audacieux. Qui partagent une ambition commune : propulser les projets entrepreneuriaux vers la réussite. Nous croyons en la puissance des relations humaines. C'est dans le partage d'idées et d'expertises que naissent les plus grands projets.",
     },
     {
       name: "keywords",
       content:
-        "La Famiglia, Agence, startup, marketing digitale, projet, invest, réseaux, freelance",
+        "La Famiglia, croissance, startup, marketing, mission, projet, collectif, levée de fonds, invest, réseaux, freelance, stratégie, entreprise",
     },
     { name: "lang", content: "fr" },
     {
@@ -22,12 +22,12 @@ useHead({
     {
       name: "og:description",
       content:
-        "Une famille de passionnés, d'innovateurs et d'audacieux. Qui partagent une ambition commune : propulser les projets entrepreneuriaux vers la réussite. Nous croyons en la puissance des relations humaines.C'est dans le partage d'idées et d'expertises que naissent les plus grands projets.",
+        "Une famille de passionnés, d'innovateurs et d'audacieux. Qui partagent une ambition commune : propulser les projets entrepreneuriaux vers la réussite. Nous croyons en la puissance des relations humaines. C'est dans le partage d'idées et d'expertises que naissent les plus grands projets.",
     },
     {
       name: "og:keywords",
       content:
-        "La Famiglia, Agence, startup, marketing digitale, projet, invest, réseaux, freelance",
+        "La Famiglia, croissance, startup, marketing, mission, projet, collectif, levée de fonds, invest, réseaux, freelance, stratégie, entreprise",
     },
     { name: "og:locale", content: "fr" },
     { name: "og:type", content: "website" },

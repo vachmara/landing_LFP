@@ -3,7 +3,7 @@ import anime from "animejs";
 
 const logos = ref<HTMLElement | null>(null);
 
-const imgWidth = 150;
+const imgWidth = 190;
 const duration = 20000;
 
 const animation = reactive<{ instance?: anime.AnimeInstance }>({});
@@ -40,9 +40,9 @@ onUnmounted(() => {
     <p class="trust-text">Ils ont fait confiance aux Freelances</p>
     <div ref="logos" class="logos flex overflow-hidden rounded-full w-full max-w-screen-md mx-auto">
       <img
-        v-for="i in 7"
+        v-for="i in 8"
         :key="i"
-        :src="`/proof/${i + 1}.webp`"
+        :src="`/proof/${i}.webp`"
         height="83"
         class="h-20"
       />
