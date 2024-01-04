@@ -131,16 +131,7 @@ const team_members = [
   },
 ];
 
-const membersContainer = ref<HTMLElement | null>(null);
-const initAnimation = () => {
-  // Scroll animation to spike the interest of the user
-};
 
-onMounted(() => {
-  if (window.innerWidth < 768) {
-    initAnimation();
-  }
-});
 </script>
 
 <template>
@@ -153,7 +144,6 @@ onMounted(() => {
     </div>
     <div
       class="flex overflow-x-auto md:overflow-x-hidden md:grid md:grid-cols-3 lg:grid-cols-3 gap-10 justify-items-center items-center"
-      ref="membersContainer"
     >
       <TeamMember
         v-for="member in team_members"
