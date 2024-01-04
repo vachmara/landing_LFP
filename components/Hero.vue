@@ -15,7 +15,7 @@ const init = () => {
 
   // SVG will be positioned relatively to the text based on Tailwind classes
   svgElement.style.width = Math.ceil(textRect.width) + "px"; // Set in begin function earlier
-
+  svgElement.style.bottom =  "-10px";
   const animation = anime({
     targets: svgElement.querySelector("path"),
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -39,9 +39,9 @@ onMounted(() => {
   >
     <div class="flex-grow lg:flex lg:w-1/2 relative flex-col">
       <h1 class="text-3xl lg:text-5xl font-bold leading-tight">
-        Levez votre
+        Votre
         <span class="relative inline-block" ref="underlinedText">
-          premier million
+          croissance,
           <svg
             ref="curveSVG"
             xmlns="http://www.w3.org/2000/svg"
@@ -60,11 +60,10 @@ onMounted(() => {
             />
           </svg>
         </span>
-        et générez vos premiers clients.
+        notre mission.
       </h1>
-      <h2 class="py-4 lg:py-8 text-lg lg:text-2xl">
-        La Famiglia accompagne la croissance de votre entreprise, de la
-        recherche de financement au déploiement marketing !
+      <h2 class="py-4 lg:py-8 text-lg lg:text-xl">
+        Notre collectif de Freelances guide votre entreprise à chaque étape de sa croissance, de la levée de fonds à la mise en œuvre de la stratégie marketing.
       </h2>
       <Button
         class="max-w-xs md:max-w-[250px] px-4 lg:px-8 py-3 lg:py-6 z-10"
