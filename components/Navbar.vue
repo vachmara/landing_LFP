@@ -4,7 +4,7 @@ import Menu from "@/assets/menu.svg";
 </script>
 
 <template>
-  <Disclosure as="nav" v-slot="{ open }">
+  <Disclosure as="nav" v-slot="{ open, close }">
     <div class="mx-auto max-w-7xl">
       <div
         class="inset-y-0 left-0 flex items-center sm:hidden py-5 justify-between px-2"
@@ -45,11 +45,13 @@ import Menu from "@/assets/menu.svg";
               class="h-auto"
           /></NuxtLink>
         </div>
-        <div class="flex gap-10 w-max min-w-[600px] items-center justify-center">
+        <div
+          class="flex gap-10 w-max min-w-[600px] items-center justify-center"
+        >
           <NuxtLink to="/#formules" class="nav-link"> Nos formules </NuxtLink>
-          <NuxtLink to="/#team" class="nav-link">Notre équipe</NuxtLink>
-          <NuxtLink to="/#work" class="nav-link">Nos travaux</NuxtLink>
+          <NuxtLink to="/#team" class="nav-link">Nos Freelances</NuxtLink>
           <NuxtLink to="/#process" class="nav-link">Notre process</NuxtLink>
+          <NuxtLink to="/#work" class="nav-link">Nos travaux</NuxtLink>
         </div>
         <Button
           class="md:max-w-[250px] px-8 hidden md:block z-10"
@@ -75,19 +77,31 @@ import Menu from "@/assets/menu.svg";
           to="/#formules"
           class="nav-link"
           active-class="text-[#3131C9F1]"
+          @click="close"
         >
           Nos formules
         </NuxtLink>
-        <NuxtLink to="/#team" class="nav-link" active-class="text-[#3131C9F1]">
-          Notre équipe
+        <NuxtLink
+          to="/#team"
+          class="nav-link"
+          active-class="text-[#3131C9F1]"
+          @click="close"
+        >
+          Nos Freelances
         </NuxtLink>
-        <NuxtLink to="/#work" class="nav-link" active-class="text-[#3131C9F1]">
+        <NuxtLink
+          to="/#work"
+          class="nav-link"
+          active-class="text-[#3131C9F1]"
+          @click="close"
+        >
           Nos travaux
         </NuxtLink>
         <NuxtLink
           to="/#process"
           class="nav-link"
           active-class="text-[#3131C9F1]"
+          @click="close"
         >
           Notre process
         </NuxtLink>

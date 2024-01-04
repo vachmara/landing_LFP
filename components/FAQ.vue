@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <UContainer class="flex flex-col gap-20 pb-32 pt-5">
+  <UContainer class="flex flex-col gap-20 pb-10 md:pb-32 pt-5">
     <div class="flex flex-col gap-5">
       <h1 class="text-6xl font-bold text-[#202041]">FAQ</h1>
       <h2 class="text-[#2D74FF] opacity-60 text-xl">

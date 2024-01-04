@@ -39,7 +39,7 @@ onMounted(() => {
 
 <template>
   <div class="formules">
-    <UContainer class="py-32 flex flex-col gap-20">
+    <UContainer class="py-3 md:py-32 flex flex-col gap-20">
       <div id="formules"></div>
       <h1 class="text-6xl font-semibold text-white" >
         <span class="relative" ref="underlinedText">
