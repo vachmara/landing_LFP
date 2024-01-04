@@ -2,44 +2,44 @@
 const cardsContent = [
   {
     position: 1,
-    title: "Création de l’entreprise",
+    title: "Lancement du projet",
     description:
-      "La famiglia vous accompagne dans la création de votre entreprise.",
+      "Nous vous accompagnons dans la réalisation du Business Plan / Pitch Deck.",
     isYellow: true,
   },
   {
     position: 2,
     title: "Recherche de financements",
     description:
-      "La famiglia vous accompagne dans la recherche de financements.",
+      "Nous vous mettons en relation avec notre réseau d'investisseurs (Business Angel, VC, FamilyOffice).",
     isYellow: true,
   },
   {
     position: 3,
-    title: "Définition de l’identité de marque",
+    title: "Identité de marque",
     description:
-      "La famiglia va vous permettre de construire votre identité de marque.",
+      "Nous créons avec vous la charte graphique de votre marque.",
     isYellow: false,
   },
   {
     position: 4,
-    title: "Construction des fondations marketing",
+    title: "Fondations marketing",
     description:
-      "La famiglia vous accompagne dans la construction des fondations marketing.",
+      "Nous bâtissons les piliers de votre écosystème marketing digital.",
     isYellow: false,
   },
   {
     position: 5,
     title: "Acquisition de clients",
     description:
-      "La famiglia vous accompagne dans l’acquisition de vos premiers clients.",
+      "Nous déployons les canaux marketing adaptés pour la génération de leads.",
     isYellow: false,
   },
   {
     position: 6,
-    title: "Rétention et fidélisation",
+    title: "Rétention",
     description:
-      "La famiglia vous accompagne dans la rétention et la fidélisation de vos clients.",
+      "Nous implémentons les ressources et actions nécessaires à la fidélisation client.",
     isYellow: false,
   },
 ];
@@ -126,7 +126,7 @@ const totalSliderWidth = computed(() => {
     <div class="hidden justify-center md:flex">
       <Button
         class="max-w-xs lg:max-w-sm px-4 lg:px-8 py-3 lg:py-6 z-10"
-        text="Rencontrez la Famiglia"
+        text="Rencontrez La Famiglia"
         to="https://calendly.com/lafamiglia-contact/30min?month=2023-12"
         primary
       />

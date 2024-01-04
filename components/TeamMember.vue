@@ -14,7 +14,7 @@ defineProps({
     <img
       :src="image"
       :alt="`${firstname} ${lastname}`"
-      class="w-auto h-auto max-w-[223px] max-h-[292px]"
+      class="w-auto h-auto max-w-[150px]"
     />
     <div class="flex flex-col">
       <span class="text-[#202041] font-bold text-3xl">{{ firstname }}</span>

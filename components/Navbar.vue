@@ -52,8 +52,8 @@ import Menu from "@/assets/menu.svg";
           <NuxtLink to="/#process" class="nav-link">Notre process</NuxtLink>
         </div>
         <Button
-          class="md:max-w-[250px] px-8 hidden md:block"
-          :text="'Découvrir la Famiglia'"
+          class="md:max-w-[250px] px-8 hidden md:block z-10"
+          :text="'Découvrir La Famiglia'"
           primary
           to="https://calendly.com/lafamiglia-contact/30min"
         />

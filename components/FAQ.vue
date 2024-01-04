@@ -12,7 +12,7 @@
       <div class="flex md:flex-row flex-col gap-10">
         <FAQBlock
           question="Combien coûte une levée de fonds ?"
-          answer="Dans l'offre La Famiglia Invest, uniquement la création du business plan et du pitch deck sont payants. Pour le reste, nous travaillons au succès."
+          answer="L’accompagnement à la levée de fonds se distingue en deux parties, un accompagnement à la création des différents éléments : sur devis. Ainsi que la présentation du dossier à un panel d’investisseurs, ce service est majoritairement payé au succès."
           class="md:w-2/3 w-full"
         />
         <FAQBlock
@@ -29,8 +29,8 @@
         />
         <FAQBlock
           class="md:w-3/5 w-full"
-          question="Qui coordonne les expertises lors d’un projet La Famiglia ?"
-          answer="La chefferie de projet est assurée en interne grâce à des outils de travail collaboratifs (Notion, Slack, Gmeet)"
+          question="Qui coordonne un projet marketing avec La Famiglia ?"
+          answer="La chefferie de projet est assurée en interne par le chef de projet et des outils de travail collaboratifs (Notion, Slack, Trello etc.)."
         />
       </div>
     </div>

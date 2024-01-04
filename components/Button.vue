@@ -38,7 +38,6 @@ defineProps({
   background: var(--Jaune, #ffd027);
   color: #202041;
   text-align: center;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   font-family: "SF Pro Text", sans-serif;
   font-size: 18px;
   font-weight: 500;

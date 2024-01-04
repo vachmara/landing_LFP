@@ -81,18 +81,24 @@ onMounted(() => {
       </span>
     </div>
 
-    <div class="max-w-full sm:max-w-[20vw] opacity-60 text-sm sm:text-base">
+    <div class="max-w-full sm:max-w-[30vw] opacity-60 text-sm sm:text-base">
       <span v-if="!project"
-        >Vous accompagne dans vos recherches de financements. De la préparation
-        de la levée, à la rencontre d’investisseurs, notre rôle est de faciliter
-        ce processus. Nos relations avec les investisseurs sont fortes,
-        permettant de maximiser les chances de réussites de votre projet.</span
+        >
+        <b class="pb-2">Recherche de financements</b><br>
+        De la préparation du dossier, à la mise en relation avec des
+        investisseurs, notre rôle est de vous introduire auprès de nouvelles
+        sources de financements. Des relations étroites avec notre réseau
+        d'investisseurs nous permettent de faciliter les échanges et maximiser
+        les chances de réussite.</span
       >
       <span v-else
-        >Notre collectif de Freelances spécialisé en marketing digital met son
-        expertise à 360° au service de projet marketing sur-mesure selon vos
-        besoins : création de marque, acquisition et fidélisation de
-        clients.</span
+        >
+        <b class="pb-2">Collectif de Freelances en marketing</b><br>
+        Notre équipe de spécialistes rassemble tous les métiers du marketing
+        digital, pour proposer un accompagnement à 360°, et adapté à vos besoins
+        : conseil stratégique, développement de marque, acquisition et
+        fidélisation de clients. Notre mission est de planifier, exécuter et
+        piloter votre projet, de A à Z.</span
       >
     </div>
     <div class="flex items-end h-full">
