@@ -3,8 +3,8 @@ import anime from "animejs";
 
 const logos = ref<HTMLElement | null>(null);
 
-const imgWidth = 190;
-const duration = 20000;
+const imgWidth = 200;
+const duration = 15000;
 
 const animation = reactive<{ instance?: anime.AnimeInstance }>({});
 
@@ -16,7 +16,7 @@ onMounted(() => {
     animation.instance = anime({
       targets: logos.value.children,
       translateX: [
-        { value: `-${totalSlides * imgWidth}px`, duration },
+        { value: `-${(totalSlides - 3.5)  * imgWidth}px`, duration },
         { value: 0, duration },
       ],
       loop: true,
@@ -44,7 +44,7 @@ onUnmounted(() => {
         :key="i"
         :src="`/proof/${i}.webp`"
         height="83"
-        class="h-20"
+        class="h-20 w-[200px] object-contain"
       />
     </div>
   </div>
