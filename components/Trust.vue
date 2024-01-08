@@ -40,7 +40,7 @@ onUnmounted(() => {
     <p class="trust-text">Ils ont fait confiance aux Freelances</p>
     <div ref="logos" class="logos flex overflow-hidden rounded-full w-full max-w-screen-md mx-auto">
       <img
-        v-for="i in 8"
+        v-for="i in 9"
         :key="i"
         :src="`/proof/${i}.webp`"
         height="83"
