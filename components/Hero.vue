@@ -35,7 +35,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="px-4 lg:px-28 py-8 lg:py-15 relative flex flex-wrap lg:flex-nowrap"
+    class="px-4 py-8 lg:py-15 relative flex flex-wrap lg:flex-nowrap"
   >
     <div class="flex-grow lg:flex lg:w-1/2 relative flex-col">
       <h1 class="text-3xl lg:text-5xl font-bold leading-tight">
