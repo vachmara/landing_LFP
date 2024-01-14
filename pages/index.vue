@@ -25,7 +25,7 @@ const scrollToTop = () => {
       <Navbar />
       <div class="hero-container">
         <Hero />
-        <div class="flex items-center justify-center py-10 md:py-32 lg:px-28">
+        <div class="flex items-center justify-center py-10 md:py-32">
           <Trust />
         </div>
       </div>
