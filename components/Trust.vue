@@ -81,8 +81,6 @@ onUnmounted(() => {
 .logos {
   min-height: 130px;
   scroll-behavior: smooth;
-  box-shadow: 40px 0px 15px 0 #7b96c8 inset, -40px 0px 15px #7880a6 inset; 
-  border: none; 
 }
 
 img{
