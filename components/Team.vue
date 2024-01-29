@@ -135,13 +135,15 @@ const team_members = [
 </script>
 
 <template>
-  <UContainer class="flex flex-col gap-20 py-20 md:py-32">
+  <UContainer class="flex flex-col gap-10 py-20 md:py-32">
     <div class="flex flex-col gap-5" id="team">
       <h1 class="text-6xl font-bold text-[#202041]">Nos Freelances</h1>
       <h2 class="text-[#2D74FF] opacity-60 text-xl">
         Chacun expert dans son domaine
       </h2>
+      
     </div>
+    
     <div
       class="flex overflow-x-auto md:overflow-x-hidden md:grid md:grid-cols-3 lg:grid-cols-3 gap-10 justify-items-center items-center"
     >
@@ -157,5 +159,9 @@ const team_members = [
         class="w-full"
       />
     </div>
+    <p class="text-[#202041] opacity-60 md:hidden">
+        Scroll pour voir les autres membres de l'équipe 
+        <i class="fas fa-arrow-right"></i>
+      </p>
   </UContainer>
 </template>

@@ -12,15 +12,15 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/animejs": "^3.1.12",
-    "nuxt": "^3.9.0",
+    "nuxt": "^3.9.3",
     "nuxt-simple-sitemap": "^4.4.1",
-    "sass": "^1.69.7",
-    "vue": "^3.4.5",
+    "sass": "^1.70.0",
+    "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.16",
-    "@nuxt/ui": "^2.11.1",
+    "@headlessui/vue": "^1.7.17",
+    "@nuxt/ui": "^2.12.3",
     "@nuxtjs/robots": "^3.0.0",
     "animejs": "^3.2.2"
   }
